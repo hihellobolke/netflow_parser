@@ -9,7 +9,7 @@ fn main() {
 
     loop {
         // Read from Socket
-        let socket = UdpSocket::bind("127.0.0.1:9995").expect("couldn't bind to address");
+        let socket = UdpSocket::bind("127.0.0.1:2055").expect("couldn't bind to address");
         let mut buf = [0; 65_535];
         let (number_of_bytes, src_addr) =
             socket.recv_from(&mut buf).expect("Didn't receive data");
